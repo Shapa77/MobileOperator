@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main_menu"
+    tools:context=".MainMenu">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="223dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_foreground" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="420dp"
+        android:layout_height="735dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:swipeRefreshLayoutProgressSpinnerBackgroundColor="#FFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center" />
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_button"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:onClick="menu_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <View
+            android:id="@+id/line_menu3"
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line_menu2"
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <View
+            android:id="@+id/line_menu1"
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:onClick="menu_Click"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/mb_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/balance_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/bg_gradient_main_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/msm_mms__view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/bg_gradient_main_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/unlim_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/inet_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/bg_gradient_main_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/minoper_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/bg_gradient_main_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tariff1_view"
+        android:layout_width="355dp"
+        android:layout_height="101dp"
+        android:background="@drawable/dark_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <View
+        android:id="@+id/sms_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/min_ukr_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/bg_gradient_main_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/refill_view"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/oval"
+        android:onClick="Refill_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/min_view"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mb_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="4 из 4 ГБ"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mb_view"
+        app:layout_constraintEnd_toEndOf="@+id/mb_view"
+        app:layout_constraintStart_toStartOf="@+id/mb_view"
+        app:layout_constraintTop_toTopOf="@+id/mb_view" />
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="50 из 50 шт"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sms_view"
+        app:layout_constraintEnd_toEndOf="@+id/sms_view"
+        app:layout_constraintStart_toStartOf="@+id/sms_view"
+        app:layout_constraintTop_toTopOf="@+id/sms_view" />
+
+    <TextView
+        android:id="@+id/min_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="120 из 120 мин"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_view"
+        app:layout_constraintEnd_toEndOf="@+id/min_view"
+        app:layout_constraintStart_toStartOf="@+id/min_view"
+        app:layout_constraintTop_toTopOf="@+id/min_view" />
+
+    <TextView
+        android:id="@+id/plus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/refill_view"
+        app:layout_constraintEnd_toEndOf="@+id/refill_view"
+        app:layout_constraintStart_toStartOf="@+id/refill_view"
+        app:layout_constraintTop_toTopOf="@+id/refill_view" />
+
+    <EditText
+        android:id="@+id/line"
+        android:layout_width="358dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_number"
+        android:layout_width="171dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/my_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Мой номер"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/open_sans"
+            android:text="074 545 65 84"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/minoper_text"
+        android:layout_width="128dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="Минуты в сети Mobile Operator"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minoper_view"
+        app:layout_constraintEnd_toEndOf="@+id/minoper_view"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/minoper_view"
+        app:layout_constraintTop_toTopOf="@+id/minoper_view"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Интернет"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inet_view"
+        app:layout_constraintEnd_toEndOf="@+id/inet_view"
+        app:layout_constraintStart_toStartOf="@+id/inet_view"
+        app:layout_constraintTop_toTopOf="@+id/inet_view" />
+
+    <TextView
+        android:id="@+id/sms_mms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="SMS/MMS"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/msm_mms__view"
+        app:layout_constraintEnd_toEndOf="@+id/msm_mms__view"
+        app:layout_constraintStart_toStartOf="@+id/msm_mms__view"
+        app:layout_constraintTop_toTopOf="@+id/msm_mms__view" />
+
+    <TextView
+        android:id="@+id/min_ukr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Минуты по Украине"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_ukr_view"
+        app:layout_constraintEnd_toEndOf="@+id/min_ukr_view"
+        app:layout_constraintStart_toStartOf="@+id/min_ukr_view"
+        app:layout_constraintTop_toTopOf="@+id/min_ukr_view" />
+
+    <TextView
+        android:id="@+id/unllim_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="∞"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/unlim_view"
+        app:layout_constraintEnd_toEndOf="@+id/unlim_view"
+        app:layout_constraintStart_toStartOf="@+id/unlim_view"
+        app:layout_constraintTop_toTopOf="@+id/unlim_view" />
+
+    <TextView
+        android:id="@+id/numeral_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="170.00 ₴  "
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/costs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Текущие расходы за месяц"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <ImageView
+        android:id="@+id/doc_ico"
+        android:layout_width="58dp"
+        android:layout_height="70dp"
+        android:translationX="-9dp"
+        android:translationY="-4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@mipmap/doc_icon_foreground" />
+
+
+
+    <TextView
+        android:id="@+id/update_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Обновлено 13 Апреля 22:21"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Баланс"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/balance_view"
+        app:layout_constraintEnd_toEndOf="@+id/balance_view"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/balance_view"
+        app:layout_constraintTop_toTopOf="@+id/balance_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="0.59 ₴"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/balance_view"
+        app:layout_constraintEnd_toEndOf="@+id/balance_view"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/balance_view"
+        app:layout_constraintTop_toTopOf="@+id/balance_view"
+        app:layout_constraintVertical_bias="0.827" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

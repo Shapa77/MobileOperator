@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobileoperator">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileOperator">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tariffs.Smart4G"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.MaxNetPro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.MAXEnergy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.Standart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.GoldXL"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.ChangeTariff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.MyTariff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tariffs.Tariffs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.RefillAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.PayAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.ConfirmAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.ConfirmNoAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.PayNoAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".refill.RefillNoAutorized"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LogIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_abonent.NewAbonentYes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_abonent.NewAbonentRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main_menu"
+    tools:context=".tariffs.ChangeTariff">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="223dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_foreground" />
+
+    <View
+        android:id="@+id/tariff1_view"
+        android:layout_width="355dp"
+        android:layout_height="101dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        android:onClick="tariff1_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/tariff1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Operator Gold XL"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/tariff1_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Подробнее"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <TextView
+        android:id="@+id/tariff1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="150₴"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff1_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff1_view"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/tariff1_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff1_view"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <View
+        android:id="@+id/tariff2_view"
+        android:layout_width="355dp"
+        android:layout_height="101dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        android:onClick="tariff2_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/tariff2_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Подробнее"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff2_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff2_view"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/tariff2_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff2_view"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <TextView
+        android:id="@+id/tariff2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="120₴"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff2_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff2_view"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/tariff2_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff2_view"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <TextView
+        android:id="@+id/tariff2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Operator MAX Energy"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff2_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff2_view"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/tariff2_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff2_view"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <View
+        android:id="@+id/tariff3_view"
+        android:layout_width="355dp"
+        android:layout_height="101dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        android:onClick="tariff3_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <TextView
+        android:id="@+id/tariff3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Operator MaxNet Pro"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff3_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff3_view"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/tariff3_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff3_view"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/tariff3_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Подробнее"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff3_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff3_view"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/tariff3_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff3_view"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <TextView
+        android:id="@+id/tariff3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="180₴"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff3_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff3_view"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/tariff3_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff3_view"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <View
+        android:id="@+id/tariff4_view"
+        android:layout_width="355dp"
+        android:layout_height="101dp"
+        android:background="@drawable/bg_gradient_main_menu_view1"
+        android:onClick="tariff4_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/tariff4_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Operator Smart 4G"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff4_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff4_view"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/tariff4_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff4_view"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/tariff4_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="130₴"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff4_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff4_view"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/tariff4_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff4_view"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <TextView
+        android:id="@+id/tariff4_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Подробнее"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff4_view"
+        app:layout_constraintEnd_toEndOf="@+id/tariff4_view"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/tariff4_view"
+        app:layout_constraintTop_toTopOf="@+id/tariff4_view"
+        app:layout_constraintVertical_bias="0.772" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

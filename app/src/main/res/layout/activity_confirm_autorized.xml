@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main_menu"
+    tools:context=".refill.ConfirmNoAutorized">
+
+    <TextView
+        android:id="@+id/refill_text2"
+        android:layout_width="377dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Оплата успешна!"
+        android:textSize="35sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <View
+        android:id="@+id/recall_button"
+        android:layout_width="165dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/dark_gradient"
+        android:onClick="ok_Click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/confirm_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="ОК"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/recall_button"
+        app:layout_constraintEnd_toEndOf="@+id/recall_button"
+        app:layout_constraintStart_toStartOf="@+id/recall_button"
+        app:layout_constraintTop_toTopOf="@+id/recall_button" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="223dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

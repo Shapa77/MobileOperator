@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "596359993030",
+    "project_id": "operator-mob-svz",
+    "storage_bucket": "operator-mob-svz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596359993030:android:955f4ca69c0a05a630a9c7",
+        "android_client_info": {
+          "package_name": "com.example.mobileoperator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596359993030-apc1uvvtds78o5pss34sdk3i5d3uumon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUsA8UgyoPpxEtxDE56s1rGDP9RyqIgTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596359993030-apc1uvvtds78o5pss34sdk3i5d3uumon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
